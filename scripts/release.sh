@@ -4,6 +4,8 @@ PATH=$PATH:$PWD/node_modules/.bin
 ROOT=$(dirname $(readlink -f $0))/..
 INITIAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
+echo "roo path : $ROOT"
+
 main() {
   ensure_clean_index &&
     check_version &&
@@ -31,7 +33,7 @@ ensure_clean_index() {
 check_version() {
   echo_funcname
 
-  NEW_VERSION=$(node $ROOT/scripts/version.js)
+  NEW_VERSION=$(node ./version.js)
   NEW_TAG="v$(npx semver clean $NEW_VERSION)"
 
   if [[ $NEW_TAG == v ]]; then
