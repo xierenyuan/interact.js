@@ -1,4 +1,4 @@
-import interact from '../../interactjs/index.js'
+import interact from '../../interactjs-fork/index.js'
 
 /*
 * This demo is very broken!

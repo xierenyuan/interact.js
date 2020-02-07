@@ -1,6 +1,6 @@
-import test from '@interactjs/_dev/test/test'
-import InteractEvent from '@interactjs/core/InteractEvent'
-import * as utils from '@interactjs/utils/index'
+import test from '@interactjs-fork/_dev/test/test'
+import InteractEvent from '@interactjs-fork/core/InteractEvent'
+import * as utils from '@interactjs-fork/utils/index'
 import DropEvent from '../drop/DropEvent'
 
 const dz1: any = { target: 'dz1', fire (event) { this.fired = event } }

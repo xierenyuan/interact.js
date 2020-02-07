@@ -1,10 +1,10 @@
-import InteractEvent from '@interactjs/core/InteractEvent'
-import { ActionName, Scope } from '@interactjs/core/scope'
-import * as utils from '@interactjs/utils/index'
+import InteractEvent from '@interactjs-fork/core/InteractEvent'
+import { ActionName, Scope } from '@interactjs-fork/core/scope'
+import * as utils from '@interactjs-fork/utils/index'
 
 export type GesturableMethod = Interact.ActionMethod<Interact.GesturableOptions>
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     gesture?: {
       angle: number           // angle from first to second touch
@@ -16,19 +16,19 @@ declare module '@interactjs/core/Interaction' {
   }
 }
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     gesturable: GesturableMethod
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface ActionDefaults {
     gesture: Interact.GesturableOptions
   }
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Actions {
     [ActionName.Gesture]?: typeof gesture
   }

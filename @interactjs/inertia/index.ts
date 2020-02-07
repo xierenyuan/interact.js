@@ -1,9 +1,9 @@
-import { EventPhase } from '@interactjs/core/InteractEvent'
-import * as modifiers from '@interactjs/modifiers/base'
-import * as utils from '@interactjs/utils/index'
-import raf from '@interactjs/utils/raf'
+import { EventPhase } from '@interactjs-fork/core/InteractEvent'
+import * as modifiers from '@interactjs-fork/modifiers/base'
+import * as utils from '@interactjs-fork/utils/index'
+import raf from '@interactjs-fork/utils/raf'
 
-declare module '@interactjs/core/InteractEvent' {
+declare module '@interactjs-fork/core/InteractEvent' {
   // eslint-disable-next-line no-shadow
   enum EventPhase {
     Resume = 'resume',
@@ -11,7 +11,7 @@ declare module '@interactjs/core/InteractEvent' {
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     inertia?: {
       active: boolean
@@ -46,7 +46,7 @@ declare module '@interactjs/core/Interaction' {
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface PerActionDefaults {
     inertia?: {
       enabled?: boolean
@@ -59,7 +59,7 @@ declare module '@interactjs/core/defaultOptions' {
   }
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface SignalArgs {
     'interactions:action-resume': {
       interaction: Interact.Interaction

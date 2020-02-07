@@ -1,6 +1,6 @@
-import test from '@interactjs/_dev/test/test'
-import drag from '@interactjs/actions/drag'
-import { autoStart } from '@interactjs/auto-start/index'
+import test from '@interactjs-fork/_dev/test/test'
+import drag from '@interactjs-fork/actions/drag'
+import { autoStart } from '@interactjs-fork/auto-start/index'
 import interactablePreventDefault from './interactablePreventDefault'
 import * as helpers from './tests/_helpers'
 

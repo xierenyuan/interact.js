@@ -8,7 +8,7 @@
   "main": "dist/interact.min.js",
   "browser": "dist/interact.min.js",
   "description": "Drag and drop, resizing and multi-touch gestures with inertia and snapping for modern browsers (and also IE9+)",
-  "homepage": "https://interactjs.io",
+  "homepage": "https://interactjs-fork.io",
   "authors": [
     {
       "name": "Taye Adeyemi",
@@ -39,8 +39,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@interactjs/interactjs": "1.8.4",
-    "@interactjs/types": "1.8.4"
+    "@interactjs-fork/interactjs": "1.8.4",
+    "@interactjs-fork/types": "1.8.4"
   },
   "_dev": {
     "entries": "./index.ts",

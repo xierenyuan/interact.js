@@ -1,23 +1,23 @@
-import Interactable from '@interactjs/core/Interactable'
-import { EventPhase } from '@interactjs/core/InteractEvent'
-import { ActionProps, Interaction } from '@interactjs/core/Interaction'
-import { Scope } from '@interactjs/core/scope'
-import { arr, extend, is, pointer as pointerUtils, rect as rectUtils, win } from '@interactjs/utils/index'
+import Interactable from '@interactjs-fork/core/Interactable'
+import { EventPhase } from '@interactjs-fork/core/InteractEvent'
+import { ActionProps, Interaction } from '@interactjs-fork/core/Interaction'
+import { Scope } from '@interactjs-fork/core/scope'
+import { arr, extend, is, pointer as pointerUtils, rect as rectUtils, win } from '@interactjs-fork/utils/index'
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     reflow: (action: ActionProps) => ReturnType<typeof reflow>
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     _reflowPromise: Promise<void>
     _reflowResolve: () => void
   }
 }
 
-declare module '@interactjs/core/InteractEvent' {
+declare module '@interactjs-fork/core/InteractEvent' {
   // eslint-disable-next-line no-shadow
   enum EventPhase {
     Reflow = 'reflow',

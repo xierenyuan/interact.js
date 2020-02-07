@@ -4,8 +4,8 @@ cc-test-reporter
 .nyc_output
 **/*.d.ts
 **/*.d.ts.map
-!@interactjs/types/types.d.ts
-*interactjs/**/*.js
-*interactjs/**/*.js.map
+!@interactjs-fork/types/types.d.ts
+*interactjs-fork/**/*.js
+*interactjs-fork/**/*.js.map
 **/node_modules
 **/lerna-debug.log

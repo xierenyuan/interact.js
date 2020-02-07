@@ -1,20 +1,20 @@
-import { ListenerMap } from '@interactjs/core/scope'
+import { ListenerMap } from '@interactjs-fork/core/scope'
 import basePlugin from './base'
 import PointerEvent from './PointerEvent'
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     holdIntervalHandle?: any
   }
 }
 
-declare module '@interactjs/pointer-events/PointerEvent' {
+declare module '@interactjs-fork/pointer-events/PointerEvent' {
   interface PointerEvent<T extends string = any> {
     count?: number
   }
 }
 
-declare module '@interactjs/pointer-events/base' {
+declare module '@interactjs-fork/pointer-events/base' {
   interface PointerEventOptions {
     holdRepeatInterval?: number
   }

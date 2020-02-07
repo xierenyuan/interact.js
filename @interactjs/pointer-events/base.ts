@@ -1,8 +1,8 @@
-import { PerActionDefaults } from '@interactjs/core/defaultOptions'
-import Eventable from '@interactjs/core/Eventable'
-import Interaction from '@interactjs/core/Interaction'
-import { Scope } from '@interactjs/core/scope'
-import * as utils from '@interactjs/utils/index'
+import { PerActionDefaults } from '@interactjs-fork/core/defaultOptions'
+import Eventable from '@interactjs-fork/core/Eventable'
+import Interaction from '@interactjs-fork/core/Interaction'
+import { Scope } from '@interactjs-fork/core/scope'
+import * as utils from '@interactjs-fork/utils/index'
 import PointerEvent from './PointerEvent'
 
 export type EventTargetList = Array<{
@@ -19,20 +19,20 @@ export interface PointerEventOptions extends PerActionDefaults {
   origin?: Interact.Point | string | Interact.Element
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     pointerEvents: typeof pointerEvents
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     prevTap?: PointerEvent<string>
     tapTime?: number
   }
 }
 
-declare module '@interactjs/core/PointerInfo' {
+declare module '@interactjs-fork/core/PointerInfo' {
   interface PointerInfo {
     hold?: {
       duration: number
@@ -41,13 +41,13 @@ declare module '@interactjs/core/PointerInfo' {
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface ActionDefaults {
     pointerEvents: Interact.Options
   }
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface SignalArgs {
     'pointerEvents:new': { pointerEvent: PointerEvent<any> }
     'pointerEvents:fired': {

@@ -1,13 +1,13 @@
-import extend from '@interactjs/utils/extend'
-import * as rectUtils from '@interactjs/utils/rect'
+import extend from '@interactjs-fork/utils/extend'
+import * as rectUtils from '@interactjs-fork/utils/rect'
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     modifiers?: any
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     modifiers?: {
       states: ModifierState[]
@@ -19,7 +19,7 @@ declare module '@interactjs/core/Interaction' {
   }
 }
 
-declare module '@interactjs/core/InteractEvent' {
+declare module '@interactjs-fork/core/InteractEvent' {
   interface InteractEvent {
     modifiers?: Array<{
       name: string
@@ -27,7 +27,7 @@ declare module '@interactjs/core/InteractEvent' {
     }>
   }
 }
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface PerActionDefaults {
     modifiers?: Modifier[]
   }

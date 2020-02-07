@@ -1,9 +1,9 @@
-import * as arr from '@interactjs/utils/arr'
-import * as domUtils from '@interactjs/utils/domUtils'
-import extend from '@interactjs/utils/extend'
-import * as is from '@interactjs/utils/is'
+import * as arr from '@interactjs-fork/utils/arr'
+import * as domUtils from '@interactjs-fork/utils/domUtils'
+import extend from '@interactjs-fork/utils/extend'
+import * as is from '@interactjs-fork/utils/is'
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface SignalArgs {
     'interactable:new': {
       interactable: Interact.Interactable

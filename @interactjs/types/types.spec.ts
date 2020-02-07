@@ -1,5 +1,5 @@
-import { JSDOM } from '@interactjs/_dev/test/domator'
-import test from '@interactjs/_dev/test/test'
+import { JSDOM } from '@interactjs-fork/_dev/test/domator'
+import test from '@interactjs-fork/_dev/test/test'
 
 test('typings', async t => {
   let error
@@ -15,6 +15,6 @@ test('typings', async t => {
   delete (global as any).window
   delete (global as any).document
 
-  t.error(error, 'interactjs-test.ts compiles without error')
+  t.error(error, 'interactjs-fork-test.ts compiles without error')
   t.end()
 })

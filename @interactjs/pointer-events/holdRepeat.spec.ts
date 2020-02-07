@@ -1,6 +1,6 @@
-import test from '@interactjs/_dev/test/test'
-import Eventable from '@interactjs/core/Eventable'
-import * as helpers from '@interactjs/core/tests/_helpers'
+import test from '@interactjs-fork/_dev/test/test'
+import Eventable from '@interactjs-fork/core/Eventable'
+import * as helpers from '@interactjs-fork/core/tests/_helpers'
 import holdRepeat from './holdRepeat'
 
 test('holdRepeat count', t => {

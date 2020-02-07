@@ -1,24 +1,24 @@
-import * as domUtils from '@interactjs/utils/domUtils'
-import * as is from '@interactjs/utils/is'
-import raf from '@interactjs/utils/raf'
-import { getStringOptionResult } from '@interactjs/utils/rect'
-import { getWindow } from '@interactjs/utils/window'
+import * as domUtils from '@interactjs-fork/utils/domUtils'
+import * as is from '@interactjs-fork/utils/is'
+import raf from '@interactjs-fork/utils/raf'
+import { getStringOptionResult } from '@interactjs-fork/utils/rect'
+import { getWindow } from '@interactjs-fork/utils/window'
 
-type Scope = import ('@interactjs/core/scope').Scope
+type Scope = import ('@interactjs-fork/core/scope').Scope
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     autoScroll: typeof autoScroll
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     autoScroll?: typeof autoScroll
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface PerActionDefaults {
     autoScroll?: AutoScrollOptions
   }

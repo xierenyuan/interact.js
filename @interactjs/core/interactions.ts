@@ -1,13 +1,13 @@
-import browser from '@interactjs/utils/browser'
-import domObjects from '@interactjs/utils/domObjects'
-import { nodeContains } from '@interactjs/utils/domUtils'
-import events from '@interactjs/utils/events'
-import * as pointerUtils from '@interactjs/utils/pointerUtils'
+import browser from '@interactjs-fork/utils/browser'
+import domObjects from '@interactjs-fork/utils/domObjects'
+import { nodeContains } from '@interactjs-fork/utils/domUtils'
+import events from '@interactjs-fork/utils/events'
+import * as pointerUtils from '@interactjs-fork/utils/pointerUtils'
 import InteractionBase from './Interaction'
 import finder, { SearchDetails } from './interactionFinder'
 import { Scope } from './scope'
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     Interaction: typeof InteractionBase
     interactions: {
@@ -21,7 +21,7 @@ declare module '@interactjs/core/scope' {
   }
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface SignalArgs {
     'interactions:find': {
       interaction: InteractionBase

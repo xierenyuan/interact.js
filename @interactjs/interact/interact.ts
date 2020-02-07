@@ -1,13 +1,13 @@
 /** @module interact */
 
-import { Options } from '@interactjs/core/defaultOptions'
-import Interactable from '@interactjs/core/Interactable'
-import { Scope } from '@interactjs/core/scope'
-import browser from '@interactjs/utils/browser'
-import events from '@interactjs/utils/events'
-import * as utils from '@interactjs/utils/index'
+import { Options } from '@interactjs-fork/core/defaultOptions'
+import Interactable from '@interactjs-fork/core/Interactable'
+import { Scope } from '@interactjs-fork/core/scope'
+import browser from '@interactjs-fork/utils/browser'
+import events from '@interactjs-fork/utils/events'
+import * as utils from '@interactjs-fork/utils/index'
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     interact: InteractStatic
   }

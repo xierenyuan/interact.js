@@ -1,4 +1,4 @@
-import test from '@interactjs/_dev/test/test'
+import test from '@interactjs-fork/_dev/test/test'
 import finder from './interactionFinder'
 import * as helpers from './tests/_helpers'
 

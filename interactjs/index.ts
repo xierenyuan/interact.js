@@ -1,5 +1,5 @@
-import interact, { init } from '@interactjs/interactjs/index'
-export * from '@interactjs/interactjs/index'
+import interact, { init } from '@interactjs-fork/interactjs/index'
+export * from '@interactjs-fork/interactjs/index'
 
 if (typeof module === 'object' && !!module) {
   try { module.exports = interact }

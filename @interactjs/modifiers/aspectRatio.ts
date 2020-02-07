@@ -17,8 +17,8 @@
  * });
  */
 
-import extend from '@interactjs/utils/extend'
-import { addEdges } from '@interactjs/utils/rect'
+import extend from '@interactjs-fork/utils/extend'
+import { addEdges } from '@interactjs-fork/utils/rect'
 import { Modifier, ModifierModule, ModifierState, prepareStates, setAll, startAll } from './base'
 
 export interface AspectRatioOptions {

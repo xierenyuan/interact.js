@@ -1,4 +1,4 @@
-import test from '@interactjs/_dev/test/test'
+import test from '@interactjs-fork/_dev/test/test'
 import normalizeListeners from './normalizeListeners'
 
 test('utils/normalizeListeners', t => {

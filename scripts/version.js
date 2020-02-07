@@ -31,7 +31,7 @@ if (!module.parent) {
 
     const versionTable = []
 
-    for (const file of ['package.json', ...glob.sync('{@interactjs/*,interactjs}/package.json')]) {
+    for (const file of ['package.json', ...glob.sync('{@interactjs-fork/*,interactjs-fork}/package.json')]) {
       const pkg = require(path.resolve(file))
 
       versionTable.push({ package: pkg.name, old: pkg.version, new: newVersion })
@@ -39,7 +39,7 @@ if (!module.parent) {
       pkg.version = newVersion
 
       for (const deps of ['dependencies', 'peerDependencies', 'devDependencies'].map(f => pkg[f]).filter(Boolean)) {
-        for (const name of Object.keys(deps).filter(n => /@?interactjs\//.test(n))) {
+        for (const name of Object.keys(deps).filter(n => /@?interactjs-fork\//.test(n))) {
           if (deps[name] === oldVersion) {
             deps[name] = newVersion
           } else {

@@ -1,6 +1,6 @@
-import { ActionName } from '@interactjs/core/scope'
-import { parentNode } from '@interactjs/utils/domUtils'
-import * as is from '@interactjs/utils/is'
+import { ActionName } from '@interactjs-fork/core/scope'
+import { parentNode } from '@interactjs-fork/utils/domUtils'
+import * as is from '@interactjs-fork/utils/is'
 import autoStart from './base'
 
 function beforeStart ({ interaction, eventTarget, dx, dy }: Interact.SignalArgs['interactions:move'], scope: Interact.Scope) {

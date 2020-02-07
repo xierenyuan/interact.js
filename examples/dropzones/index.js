@@ -1,4 +1,4 @@
-import interact from '../../interactjs/index.js'
+import interact from '../../interactjs-fork/index.js'
 
 let transformProp;
 const dragPositions = [1, 2, 3, 4].reduce((acc, n) => {

@@ -1,24 +1,24 @@
 /* eslint-disable no-console */
 /* global process */
-import domObjects from '@interactjs/utils/domObjects'
-import { parentNode } from '@interactjs/utils/domUtils'
-import extend from '@interactjs/utils/extend'
-import * as is from '@interactjs/utils/is'
-import win from '@interactjs/utils/window'
+import domObjects from '@interactjs-fork/utils/domObjects'
+import { parentNode } from '@interactjs-fork/utils/domUtils'
+import extend from '@interactjs-fork/utils/extend'
+import * as is from '@interactjs-fork/utils/is'
+import win from '@interactjs-fork/utils/window'
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     logger: Logger
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface BaseDefaults {
     devTools?: DevToolsOptions
   }
 }
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     devTools?: Interact.OptionMethod<DevToolsOptions>
   }

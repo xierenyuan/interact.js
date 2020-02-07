@@ -1,13 +1,13 @@
 import basePlugin from './base'
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface PerActionDefaults {
     hold?: number
     delay?: number
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     autoStartHoldTimer?: any
   }

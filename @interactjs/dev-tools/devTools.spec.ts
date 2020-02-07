@@ -1,6 +1,6 @@
-import test from '@interactjs/_dev/test/test'
-import { drag, resize } from '@interactjs/actions/index'
-import * as helpers from '@interactjs/core/tests/_helpers'
+import test from '@interactjs-fork/_dev/test/test'
+import { drag, resize } from '@interactjs-fork/actions/index'
+import * as helpers from '@interactjs-fork/core/tests/_helpers'
 import devTools, { Check, Logger } from './index'
 
 const { checks, links, prefix } = devTools

@@ -1,5 +1,5 @@
-import domObjects from '@interactjs/utils/domObjects'
-import * as utils from '@interactjs/utils/index'
+import domObjects from '@interactjs-fork/utils/domObjects'
+import * as utils from '@interactjs-fork/utils/index'
 import defaults from './defaultOptions'
 import Eventable from './Eventable'
 import InteractableBase from './Interactable'

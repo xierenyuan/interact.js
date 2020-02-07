@@ -1,9 +1,9 @@
-import { matchesSelector, nodeContains } from '@interactjs/utils/domUtils'
-import events from '@interactjs/utils/events'
-import * as is from '@interactjs/utils/is'
-import { getWindow } from '@interactjs/utils/window'
+import { matchesSelector, nodeContains } from '@interactjs-fork/utils/domUtils'
+import events from '@interactjs-fork/utils/events'
+import * as is from '@interactjs-fork/utils/is'
+import { getWindow } from '@interactjs-fork/utils/window'
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     preventDefault: typeof preventDefault
     checkAndPreventDefault: (event: Event) => void

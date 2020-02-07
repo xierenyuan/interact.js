@@ -1,4 +1,4 @@
-import * as utils from '@interactjs/utils/index'
+import * as utils from '@interactjs-fork/utils/index'
 import Interactable from './Interactable'
 import InteractEvent, { EventPhase } from './InteractEvent'
 import PointerInfo from './PointerInfo'
@@ -48,7 +48,7 @@ export interface DoPhaseArg {
   type?: string
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface SignalArgs {
     'interactions:new': { interaction: Interaction }
     'interactions:down': PointerArgProps<{

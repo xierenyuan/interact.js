@@ -1,6 +1,6 @@
-import test from '@interactjs/_dev/test/test'
-import drag from '@interactjs/actions/drag'
-import * as helpers from '@interactjs/core/tests/_helpers'
+import test from '@interactjs-fork/_dev/test/test'
+import drag from '@interactjs-fork/actions/drag'
+import * as helpers from '@interactjs-fork/core/tests/_helpers'
 import autoStart from './base'
 
 test('autoStart', t => {

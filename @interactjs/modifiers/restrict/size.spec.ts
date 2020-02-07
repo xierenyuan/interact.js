@@ -1,5 +1,5 @@
-import test from '@interactjs/_dev/test/test'
-import extend from '@interactjs/utils/extend'
+import test from '@interactjs-fork/_dev/test/test'
+import extend from '@interactjs-fork/utils/extend'
 import * as helpers from '../../core/tests/_helpers'
 import * as rectUtils from '../../utils/rect'
 import { getRectOffset, startAll } from './../base'

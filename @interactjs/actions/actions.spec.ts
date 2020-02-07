@@ -1,6 +1,6 @@
-import test from '@interactjs/_dev/test/test'
-import * as helpers from '@interactjs/core/tests/_helpers'
-import * as pointerUtils from '@interactjs/utils/pointerUtils'
+import test from '@interactjs-fork/_dev/test/test'
+import * as helpers from '@interactjs-fork/core/tests/_helpers'
+import * as pointerUtils from '@interactjs-fork/utils/pointerUtils'
 import * as actions from './index'
 
 test('actions integration', t => {

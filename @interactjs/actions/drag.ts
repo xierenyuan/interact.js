@@ -1,20 +1,20 @@
-import { ActionName, Scope } from '@interactjs/core/scope'
-import * as arr from '@interactjs/utils/arr'
-import * as is from '@interactjs/utils/is'
+import { ActionName, Scope } from '@interactjs-fork/core/scope'
+import * as arr from '@interactjs-fork/utils/arr'
+import * as is from '@interactjs-fork/utils/is'
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     draggable: DraggableMethod
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface ActionDefaults {
     drag: Interact.DraggableOptions
   }
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Actions {
     [ActionName.Drag]?: typeof drag
   }

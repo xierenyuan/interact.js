@@ -1,9 +1,9 @@
-import BaseEvent from '@interactjs/core/BaseEvent'
-import Interactable from '@interactjs/core/Interactable'
-import InteractEvent from '@interactjs/core/InteractEvent'
-import Interaction from '@interactjs/core/Interaction'
-import { ActionName } from '@interactjs/core/scope'
-import * as arr from '@interactjs/utils/arr'
+import BaseEvent from '@interactjs-fork/core/BaseEvent'
+import Interactable from '@interactjs-fork/core/Interactable'
+import InteractEvent from '@interactjs-fork/core/InteractEvent'
+import Interaction from '@interactjs-fork/core/Interaction'
+import { ActionName } from '@interactjs-fork/core/scope'
+import * as arr from '@interactjs-fork/utils/arr'
 
 class DropEvent extends BaseEvent {
   target: Interact.Element

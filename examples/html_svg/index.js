@@ -1,4 +1,4 @@
-import interact from '../../interactjs/index.js'
+import interact from '../../interactjs-fork/index.js'
 
 let svg;
 const svgNS = 'http://www.w3.org/2000/svg';

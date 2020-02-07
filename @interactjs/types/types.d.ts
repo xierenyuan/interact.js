@@ -1,30 +1,30 @@
 // Type definitions for interact.js
-// Project: http://interactjs.io/
+// Project: http://interactjs-fork.io/
 // Definitions by: Gaspard Bucher <feature-space.com>
 //                  Taye Adeyemi <taye.me>
 
-import * as drag from '@interactjs/actions/drag'
-import * as gesture from '@interactjs/actions/gesture'
-import * as resize from '@interactjs/actions/resize'
-import * as defaults from '@interactjs/core/defaultOptions'
-import _Interactable from '@interactjs/core/Interactable'
-import _InteractableSet from '@interactjs/core/InteractableSet'
-import * as iEvent from '@interactjs/core/InteractEvent'
-import * as interaction from '@interactjs/core/Interaction'
-import * as scope from '@interactjs/core/scope'
-import interact from '@interactjs/interact/interact'
-import * as snap from '@interactjs/modifiers/snap/pointer'
-import { PointerEvent as _PointerEvent } from '@interactjs/pointer-events/PointerEvent'
+import * as drag from '@interactjs-fork/actions/drag'
+import * as gesture from '@interactjs-fork/actions/gesture'
+import * as resize from '@interactjs-fork/actions/resize'
+import * as defaults from '@interactjs-fork/core/defaultOptions'
+import _Interactable from '@interactjs-fork/core/Interactable'
+import _InteractableSet from '@interactjs-fork/core/InteractableSet'
+import * as iEvent from '@interactjs-fork/core/InteractEvent'
+import * as interaction from '@interactjs-fork/core/Interaction'
+import * as scope from '@interactjs-fork/core/scope'
+import interact from '@interactjs-fork/interact/interact'
+import * as snap from '@interactjs-fork/modifiers/snap/pointer'
+import { PointerEvent as _PointerEvent } from '@interactjs-fork/pointer-events/PointerEvent'
 import _NativePointerEventType from './NativePointerEventType'
 
 // import module augmentations
-import '@interactjs/actions/drop'
-import '@interactjs/auto-scroll'
-import '@interactjs/auto-start'
-import '@interactjs/auto-start/InteractableMethods'
-import '@interactjs/inertia'
-import '@interactjs/pointer-events/interactableTargets'
-import '@interactjs/reflow'
+import '@interactjs-fork/actions/drop'
+import '@interactjs-fork/auto-scroll'
+import '@interactjs-fork/auto-start'
+import '@interactjs-fork/auto-start/InteractableMethods'
+import '@interactjs-fork/inertia'
+import '@interactjs-fork/pointer-events/interactableTargets'
+import '@interactjs-fork/reflow'
 
 declare namespace Interact {
   type OrBoolean<T> = {

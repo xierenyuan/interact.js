@@ -26,7 +26,7 @@ module.exports = {
         require('babel-plugin-transform-inline-environment-variables'),
       ],
 
-  ignore: [/\/node_modules\/(?!@interactjs\/)/],
+  ignore: [/\/node_modules\/(?!@interactjs-fork\/)/],
 
   extensions: [
     '.ts',

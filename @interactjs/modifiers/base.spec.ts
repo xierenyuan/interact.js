@@ -1,7 +1,7 @@
-import test from '@interactjs/_dev/test/test'
-import { EventPhase } from '@interactjs/core/InteractEvent'
-import * as helpers from '@interactjs/core/tests/_helpers'
-import * as utils from '@interactjs/utils/index'
+import test from '@interactjs-fork/_dev/test/test'
+import { EventPhase } from '@interactjs-fork/core/InteractEvent'
+import * as helpers from '@interactjs-fork/core/tests/_helpers'
+import * as utils from '@interactjs-fork/utils/index'
 import modifiersBase from './base'
 
 test('modifiers/base', t => {

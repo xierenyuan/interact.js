@@ -1,13 +1,13 @@
-import * as utils from '@interactjs/utils/index'
+import * as utils from '@interactjs-fork/utils/index'
 import InteractableMethods from './InteractableMethods'
 
-declare module '@interactjs/interact/interact' {
+declare module '@interactjs-fork/interact/interact' {
   interface InteractStatic {
     maxInteractions: (newValue: any) => any
   }
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     autoStart: AutoStart
     maxInteractions: (...args: any[]) => any
@@ -20,7 +20,7 @@ declare module '@interactjs/core/scope' {
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface BaseDefaults {
     actionChecker?: any
     cursorChecker?: any

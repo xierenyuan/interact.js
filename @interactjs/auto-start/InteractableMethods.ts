@@ -1,7 +1,7 @@
-import { warnOnce } from '@interactjs/utils/index'
-import * as is from '@interactjs/utils/is'
+import { warnOnce } from '@interactjs-fork/utils/index'
+import * as is from '@interactjs-fork/utils/is'
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     getAction: (
       this: Interact.Interactable,
@@ -23,7 +23,7 @@ declare module '@interactjs/core/Interactable' {
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     pointerIsDown: boolean
   }

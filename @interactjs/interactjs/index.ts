@@ -1,10 +1,10 @@
-import interact, { init as initInteract } from '@interactjs/interact/index'
-import * as modifiers from '@interactjs/modifiers/index'
-import '@interactjs/types/index'
-import extend from '@interactjs/utils/extend'
-import * as snappers from '@interactjs/utils/snappers/index'
+import interact, { init as initInteract } from '@interactjs-fork/interact/index'
+import * as modifiers from '@interactjs-fork/modifiers/index'
+import '@interactjs-fork/types/index'
+import extend from '@interactjs-fork/utils/extend'
+import * as snappers from '@interactjs-fork/utils/snappers/index'
 
-declare module '@interactjs/interact/interact' {
+declare module '@interactjs-fork/interact/interact' {
   interface InteractStatic {
     modifiers: typeof modifiers
     snappers: typeof snappers
@@ -20,7 +20,7 @@ export function init (win: Window) {
   initInteract(win)
 
   return interact.use({
-    id: 'interactjs',
+    id: 'interactjs-fork',
     install () {
       interact.modifiers = extend({}, modifiers)
       interact.snappers = snappers

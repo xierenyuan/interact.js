@@ -1,7 +1,7 @@
-import Interactable from '@interactjs/core/Interactable'
-import InteractEvent from '@interactjs/core/InteractEvent'
-import { ActionName, Scope } from '@interactjs/core/scope'
-import * as utils from '@interactjs/utils/index'
+import Interactable from '@interactjs-fork/core/Interactable'
+import InteractEvent from '@interactjs-fork/core/InteractEvent'
+import { ActionName, Scope } from '@interactjs-fork/core/scope'
+import * as utils from '@interactjs-fork/utils/index'
 import drag from '../drag'
 import DropEvent from './DropEvent'
 
@@ -10,7 +10,7 @@ export interface DropzoneMethod {
   (): Interact.DropzoneOptions
 }
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     dropzone: DropzoneMethod
     dropCheck: (
@@ -24,7 +24,7 @@ declare module '@interactjs/core/Interactable' {
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     dropState?: {
       cur: {
@@ -46,7 +46,7 @@ declare module '@interactjs/core/Interaction' {
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface ActionDefaults {
     drop: Interact.DropzoneOptions
   }
@@ -57,7 +57,7 @@ interface DropSignalArg {
   dragEvent: Interact.DragEvent
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Scope {
     dynamicDrop?: boolean
   }

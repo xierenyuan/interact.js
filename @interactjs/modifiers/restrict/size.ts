@@ -1,5 +1,5 @@
-import extend from '@interactjs/utils/extend'
-import * as rectUtils from '@interactjs/utils/rect'
+import extend from '@interactjs-fork/utils/extend'
+import * as rectUtils from '@interactjs-fork/utils/rect'
 import { ModifierArg, ModifierState } from '../base'
 import restrictEdges, { RestrictEdgesState } from './edges'
 import { getRestrictionRect, RestrictOptions } from './pointer'

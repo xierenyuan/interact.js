@@ -1,34 +1,34 @@
-import { Interaction } from '@interactjs/core/Interaction'
-import { ActionName, Scope } from '@interactjs/core/scope'
-import * as arr from '@interactjs/utils/arr'
-import * as dom from '@interactjs/utils/domUtils'
-import extend from '@interactjs/utils/extend'
-import * as is from '@interactjs/utils/is'
+import { Interaction } from '@interactjs-fork/core/Interaction'
+import { ActionName, Scope } from '@interactjs-fork/core/scope'
+import * as arr from '@interactjs-fork/utils/arr'
+import * as dom from '@interactjs-fork/utils/domUtils'
+import extend from '@interactjs-fork/utils/extend'
+import * as is from '@interactjs-fork/utils/is'
 
 export type EdgeName = 'top' | 'left' | 'bottom' | 'right'
 
 export type ResizableMethod = Interact.ActionMethod<Interact.ResizableOptions>
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     resizable: ResizableMethod
   }
 }
 
-declare module '@interactjs/core/Interaction' {
+declare module '@interactjs-fork/core/Interaction' {
   interface Interaction {
     resizeAxes: 'x' | 'y' | 'xy'
     resizeStartAspectRatio: number
   }
 }
 
-declare module '@interactjs/core/defaultOptions' {
+declare module '@interactjs-fork/core/defaultOptions' {
   interface ActionDefaults {
     resize: Interact.ResizableOptions
   }
 }
 
-declare module '@interactjs/core/scope' {
+declare module '@interactjs-fork/core/scope' {
   interface Actions {
     [ActionName.Resize]?: typeof resize
   }
@@ -262,7 +262,7 @@ function checkResizeEdge (
     : dom.matchesUpTo(element, value, interactableElement)
 }
 
-function initCursors (browser: typeof import ('@interactjs/utils/browser').default) {
+function initCursors (browser: typeof import ('@interactjs-fork/utils/browser').default) {
   return (browser.isIe9 ? {
     x : 'e-resize',
     y : 's-resize',

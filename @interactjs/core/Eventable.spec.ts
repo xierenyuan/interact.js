@@ -1,4 +1,4 @@
-import test from '@interactjs/_dev/test/test'
+import test from '@interactjs-fork/_dev/test/test'
 import Eventable from './Eventable'
 
 test('Eventable', t => {

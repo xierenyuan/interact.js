@@ -1,5 +1,5 @@
 {
-  "name": "@interactjs/interactjs",
+  "name": "@interactjs-fork/interactjs",
   "version": "1.8.4",
   "repository": {
     "type": "git",
@@ -7,13 +7,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@interactjs/types": "1.8.4"
+    "@interactjs-fork/types": "1.8.4"
   },
   "devDependencies": {
-    "@interactjs/_dev": "1.8.4",
-    "@interactjs/interact": "1.8.4",
-    "@interactjs/modifiers": "1.8.4",
-    "@interactjs/utils": "1.8.4"
+    "@interactjs-fork/_dev": "1.8.4",
+    "@interactjs-fork/interact": "1.8.4",
+    "@interactjs-fork/modifiers": "1.8.4",
+    "@interactjs-fork/utils": "1.8.4"
   },
   "publishConfig": {
     "access": "public"

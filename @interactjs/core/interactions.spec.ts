@@ -1,4 +1,4 @@
-import test from '@interactjs/_dev/test/test'
+import test from '@interactjs-fork/_dev/test/test'
 import Interaction from './Interaction'
 import interactions from './interactions'
 import * as helpers from './tests/_helpers'

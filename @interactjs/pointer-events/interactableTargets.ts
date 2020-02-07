@@ -1,10 +1,10 @@
-import { Scope } from '@interactjs/core/scope'
-import { merge } from '@interactjs/utils/arr'
-import extend from '@interactjs/utils/extend'
+import { Scope } from '@interactjs-fork/core/scope'
+import { merge } from '@interactjs-fork/utils/arr'
+import extend from '@interactjs-fork/utils/extend'
 
-type Interactable = import ('@interactjs/core/Interactable').default
+type Interactable = import ('@interactjs-fork/core/Interactable').default
 
-declare module '@interactjs/core/Interactable' {
+declare module '@interactjs-fork/core/Interactable' {
   interface Interactable {
     pointerEvents: typeof pointerEventsMethod
     __backCompatOption: (optionName: string, newValue: any) => any

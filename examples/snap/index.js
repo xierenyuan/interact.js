@@ -1,4 +1,4 @@
-import interact from '../../interactjs/index.js'
+import interact from '../../interactjs-fork/index.js'
 
 let canvas,
   context,
