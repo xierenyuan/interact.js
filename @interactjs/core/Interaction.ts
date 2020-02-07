@@ -451,6 +451,7 @@ export class Interaction<T extends ActionName = any> {
     this._interacting = false
     this._stopped = true
     this.prepared.name = this.prevEvent = null
+    this.pointerIsDown = false
   }
 
   getPointerIndex (pointer) {
