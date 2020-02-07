@@ -65,15 +65,15 @@ run_build() {
   echo_funcname
 
   # copy README
-  cp $ROOT/README.md interactjs/ &&
+  # cp $ROOT/README.md interactjs/ &&
 
   # copy license file
-  npx lerna exec --no-private -- cp -v $ROOT/LICENSE . ||
-    quit "failed to copy LICENSE"
+  # npx lerna exec --no-private -- cp -v $ROOT/LICENSE . ||
+  #   quit "failed to copy LICENSE"
 
   # copy .npmignore to all packages
-  npx lerna exec --no-private -- "echo '# copied from [root]/.npmignore' > .npmignore
-    cat $ROOT/.npmignore >> .npmignore" &&
+  # npx lerna exec --no-private -- "echo '# copied from [root]/.npmignore' > .npmignore
+  #   cat $ROOT/.npmignore >> .npmignore" &&
 
   ## generate esnext .js modules
   npm run esnext &&
@@ -103,7 +103,7 @@ push_and_publish() {
   git push --no-verify origin $NEW_TAG || quit "failed to push git tag $NEW_TAG to origin" $?
 
   # add gitHead to package.json files
-  node $ROOT/scripts/setGitHead.js
+  node ./scripts/setGitHead.js
 
   # publish to npm with release tag if provided
   npx lerna exec --no-private -- npm publish $tag_arg || quit "failed to publish to npm" $?
