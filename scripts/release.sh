@@ -33,7 +33,7 @@ ensure_clean_index() {
 check_version() {
   echo_funcname
 
-  NEW_VERSION=$(node ./version.js)
+  NEW_VERSION=$(node ./scripts/version.js)
   NEW_TAG="v$(npx semver clean $NEW_VERSION)"
 
   if [[ $NEW_TAG == v ]]; then
