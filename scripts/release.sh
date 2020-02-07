@@ -65,7 +65,7 @@ run_build() {
   echo_funcname
 
   # copy README
-  cp $ROOT/README.md interactjs/ &&
+  # cp $ROOT/README.md interactjs/ &&
 
   # copy license file
   # npx lerna exec --no-private -- cp -v $ROOT/LICENSE . ||
