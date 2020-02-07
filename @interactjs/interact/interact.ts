@@ -24,6 +24,7 @@ export interface InteractStatic {
   off: typeof off
   isSet: typeof isSet
   use: typeof use
+  clearPointerIsDown: typeof clearPointerIsDown
   getPointerAverage: typeof utils.pointer.pointerAverage
   getTouchBBox: typeof utils.pointer.touchBBox
   getTouchDistance: typeof utils.pointer.touchDistance
@@ -257,6 +258,15 @@ function stop () {
     interaction.stop()
   }
 
+  return interact
+}
+
+interact.clearPointerIsDown  = clearPointerIsDown
+
+function clearPointerIsDown () {
+  for (const interaction of scope.interactions.list) {
+    interaction.clearPointerIsDown()
+  }
   return interact
 }
 

@@ -28,7 +28,8 @@ export enum _ProxyMethods {
   move = '',
   end = '',
   stop = '',
-  interacting = ''
+  interacting = '',
+  clearPointerIsDown = ''
 }
 
 export type PointerArgProps<T extends {} = {}> = {
@@ -451,6 +452,9 @@ export class Interaction<T extends ActionName = any> {
     this._interacting = false
     this._stopped = true
     this.prepared.name = this.prevEvent = null
+  }
+
+  clearPointerIsDown () {
     this.pointerIsDown = false
   }
 
