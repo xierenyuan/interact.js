@@ -72,8 +72,8 @@ run_build() {
     # quit "failed to copy LICENSE"
 
   # copy .npmignore to all packages
-  npx lerna exec --no-private -- "echo '# copied from [root]/.npmignore' > .npmignore
-    cat $ROOT/.npmignore >> .npmignore" &&
+  # npx lerna exec --no-private -- "echo '# copied from [root]/.npmignore' > .npmignore
+    # cat $ROOT/.npmignore >> .npmignore" &&
 
   ## generate esnext .js modules
   npm run esnext &&
